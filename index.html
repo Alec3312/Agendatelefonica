@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agenda Telefónica</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Agenda Telefónica</h1>
+
+    <div id="form-container">
+        <center><label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono">
+        <label for="categoria">Categoría:</label>
+        <select id="categoria">
+            <option value="familiar">Familiar</option>
+            <option value="amigo">Amigo</option>
+            <option value="Mejor amigo">Mejor Amigo</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="escolar">Escolar</option>
+            </select>
+        <button onclick="agregarContacto()">Agregar</button></center>
+    </div>
+
+    <table id="agenda-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Categoría</th>
+                <th>Mensajes</th>
+                <th>Llamadas</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="agenda-body">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
